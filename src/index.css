@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* body {
+    background-color: red;
+  } */
+
+  /* .nav-links:hover .dropdown-content {
+    @apply block;
+  } */
+
+  body {
+    @apply font-epilogue;
+  }
+
+  .mobile-nav {
+    box-shadow: 0 0 20px 200px rgba(0, 0, 0, 0.233);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
