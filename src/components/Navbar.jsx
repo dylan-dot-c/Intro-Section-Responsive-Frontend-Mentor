@@ -47,9 +47,9 @@ function Navbar() {
             <div
                 className='md:hidden block'
                 onClick={() => {
-                    setShowNav(!true);
+                    setShowNav(true);
                 }}>
-                <img src='/icon-menu.svg' alt='' />
+                <img src='/icon-menu.svg' alt='open nav menu' />
             </div>
             <div
                 className={`navbar-content ${
@@ -58,7 +58,7 @@ function Navbar() {
         ${showNav || height > 800 ? "flex" : "hidden"}`}>
                 <button
                     className='p-2 self-end md:hidden block'
-                    onClick={() => setShowNav(false)}>
+                    onClick={() => setShowNav(!showNav)}>
                     <img src='/icon-close-menu.svg' alt='' />
                 </button>
                 <div className='flex flex-col md:flex-row gap-8  w-full'>
