@@ -5,23 +5,19 @@
 @tailwind utilities;
 
 @layer base {
-  /* body {
-    background-color: red;
-  } */
+    body {
+        @apply font-epilogue;
+    }
 
-  /* .nav-links:hover .dropdown-content {
-    @apply block;
-  } */
+    .mobile-nav {
+        box-shadow: 0 0 20px 200px rgba(0, 0, 0, 0.233);
+    }
 
-  body {
-    @apply font-epilogue;
-  }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 
-  .mobile-nav {
-    box-shadow: 0 0 20px 200px rgba(0, 0, 0, 0.233);
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+    a:hover {
+        @apply font-bold;
+    }
 }
